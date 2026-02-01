@@ -9,37 +9,37 @@ const Footer = () => {
         <div className={footerCss.blob1}></div>
         <div className={footerCss.blob2}></div>
         <div className="row gy-5">
-          
-          
+
+
           <div className="col-lg-4 col-md-6">
             <div className={footerCss.brandContainer}>
-               <div className={footerCss.logoBox}>ع</div>
-               <span className={footerCss.brandName}>عدسة</span>
+              <div className={footerCss.logoBox}>ع</div>
+              <span className={footerCss.brandName}>عدسة</span>
             </div>
             <p className={footerCss.brandDesc}>
               مدونة متخصصة في فن التصوير الفوتوغرافي، نشارك معكم أسرار المحترفين ونصائح عملية لتطوير مهاراتكم.
             </p>
             <div className={footerCss.socialIcons}>
-              <a target="_blank" href="https://twitter.com/adasah" className={footerCss.iconBtn}>
+              <div className={footerCss.iconBtn}>
                 <i className='fa-brands fa-x-twitter'></i>
-                </a>
-              <a target="_blank" href="https://github.com/adasah" className={footerCss.iconBtn}>
+              </div>
+              <div className={footerCss.iconBtn}>
                 <i className='fa-brands fa-github'></i>
-                </a>
-              <a target="_blank" href="https://linkedin.com/company/adasah" className={footerCss.iconBtn}>
+              </div>
+              <div className={footerCss.iconBtn}>
                 <i className='fa-brands fa-linkedin-in'></i>
-                </a>
-              <a target="_blank" href="https://youtube.com/@adasah" className={footerCss.iconBtn}>
+              </div>
+              <div className={footerCss.iconBtn}>
                 <i className='fa-brands fa-youtube'></i>
-                </a>
+              </div>
             </div>
           </div>
 
           <div className="col-lg-2 col-md-6">
             <h5 className={footerCss.columnTitle}>استكشف</h5>
             <ul className={footerCss.linksList}>
-              <li><Link to="/home"  className={footerCss.footerLink}>الرئيسية</Link></li>
-              <li><Link to="/blog"  className={footerCss.footerLink}>المدونة</Link></li>
+              <li><Link to="/home" className={footerCss.footerLink}>الرئيسية</Link></li>
+              <li><Link to="/blog" className={footerCss.footerLink}>المدونة</Link></li>
               <li><Link to="/about" className={footerCss.footerLink}>من نحن</Link></li>
             </ul>
           </div>
@@ -67,12 +67,12 @@ const Footer = () => {
 
         <div className={`row ${footerCss.bottomBar} mt-4 pt-3`}>
           <div className="col-md-6 text-center text-md-end mb-3 mb-md-0">
-             &copy; 2026 عدسة. صنع بكل <span className={footerCss.heartIcon}><i className="fa-solid fa-heart"/></span> جميع الحقوق محفوظة.
+            &copy; 2026 عدسة. صنع بكل <span className={footerCss.heartIcon}><i className="fa-solid fa-heart" /></span> جميع الحقوق محفوظة.
           </div>
           <div className="col-md-6 text-center text-md-start">
             <div className={footerCss.bottomLinks}>
-               <Link to="/privacy" className={footerCss.footerLink}>سياسة الخصوصية</Link>
-               <Link to="/terms" className={footerCss.footerLink}>شروط الخدمة</Link>
+              <Link to="/privacy" className={footerCss.footerLink}>سياسة الخصوصية</Link>
+              <Link to="/terms" className={footerCss.footerLink}>شروط الخدمة</Link>
             </div>
           </div>
         </div>
