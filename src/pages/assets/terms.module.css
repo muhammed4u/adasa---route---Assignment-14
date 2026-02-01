@@ -1,0 +1,213 @@
+.pageWrapper {
+    background-color: #0a0a0a;
+    min-height: 100vh;
+    color: #a3a3a3;
+    direction: rtl;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    background-color: #0a0a0a;
+  }
+  
+  .gridBackground {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(38, 38, 38, 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(38, 38, 38, 0.5) 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 1;
+    pointer-events: none;
+  }
+  
+  .glowEffect {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    width: 18rem;
+    height: 18rem;
+    background-color: rgba(234, 179, 8, 0.2); 
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+  }
+  
+  .breadcrumbLink {
+    color: #a3a3a3; 
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .breadcrumbLink:hover {
+    color: #fff;
+  }
+  
+  .breadcrumbSeparator {
+    font-size: 0.8rem;
+    color: #525252; 
+  }
+  
+  .breadcrumbActive {
+    color: #f97316; 
+    font-weight: 500;
+  }
+  
+  .headerIconBox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(249, 115, 22, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    border-radius: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .headerIcon {
+    font-size: 2rem;
+    color: #f97316;
+  }
+  
+  .mainTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  
+  .subTitle {
+    font-size: 1.125rem;
+    color: #a3a3a3;
+  }
+  
+  .warningBox {
+    background-color: rgba(234, 179, 8, 0.1);
+    border: 1px solid rgba(234, 179, 8, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 48px;
+  }
+  
+  .warningIcon {
+    width: 24px;
+    height: 24px;
+    color: #eab308; 
+  }
+  
+  .warningTitle {
+    font-weight: 600;
+    color: #eab308;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+  }
+  
+  .warningText {
+    color: rgba(253, 224, 71, 0.8); 
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  .sectionHeading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .numberBadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(to bottom right, #f97316, #eab308);
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 8px;
+  }
+  
+  .sectionContent {
+    padding-right: 44px;
+  }
+  
+  .textGray {
+    color: #a3a3a3;
+    line-height: 1.7;
+  }
+  
+  .subHeadingText {
+    color: #d4d4d4; 
+    font-weight: 500;
+  }
+  
+  .restrictionList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .restrictionList li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #a3a3a3;
+  }
+  
+  .crossIcon {
+    color: #f87171; 
+    margin-top: 5px;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .contactLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #f97316;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .contactLink:hover {
+    color: #fb923c;
+  }
+  
+  .footerNote {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid #262626;
+    color: #737373;
+    font-size: 0.875rem;
+  }
+  
+  .linkHighlight {
+    color: #f97316;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .linkHighlight:hover {
+    color: #fb923c;
+  }
+  
+  @media (min-width: 768px) {
+    .mainTitle {
+      font-size: 3rem;
+    }
+  }

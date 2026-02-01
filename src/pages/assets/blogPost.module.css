@@ -1,0 +1,562 @@
+.mainWrapper {
+    background-color: #0a0a0a;
+    min-height: 100vh;
+    direction: rtl;
+  }
+  
+  .loading {
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .heroSection {
+    position: relative;
+    height: 60vh;
+    min-height: 500px;
+    overflow: hidden;
+  }
+  
+  .heroImage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .heroOverlayBottom {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #0a0a0a, rgba(10, 10, 10, 0.5), transparent);
+  }
+  
+  .heroOverlayLeft {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10, 10, 10, 0.3), transparent);
+  }
+  
+  .breadcrumbWrapper {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    left: 2rem;
+    z-index: 10;
+  }
+  
+  .breadcrumbNav {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.875rem;
+    color: #fff;
+  }
+  
+  .breadcrumbLink {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .breadcrumbLink:hover {
+    color: #fff;
+  }
+  
+  .breadcrumbActive {
+    color: #fb923c;
+    font-weight: 500;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .heroContentContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 0;
+    z-index: 10;
+  }
+  
+  .heroCategoryBadge {
+    padding: 8px 16px;
+    background-color: #f97316;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .heroCategoryBadge:hover {
+    background-color: #ea580c;
+  }
+  
+  .heroMeta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+  }
+  
+  .heroTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    max-width: 900px;
+  }
+  
+  @media (min-width: 768px) {
+    .heroTitle {
+      font-size: 3rem;
+    }
+  }
+  
+  .authorBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .authorBadgeImg {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(249, 115, 22, 0.5);
+  }
+  
+  .authorBadgeName {
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .authorBadgeRole {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+  }
+  
+  .contentGrid {
+    display: grid;
+    gap: 3rem;
+  }
+  
+  @media (min-width: 992px) {
+    .contentGrid {
+      grid-template-columns: 1fr 300px;
+    }
+    .articleColumn {
+      order: 1;
+    }
+    .sidebarColumn {
+      order: 2;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .articleColumn {
+      order: 2;
+    }
+    .sidebarColumn {
+      order: 1;
+    }
+  }
+  
+  .quoteBox {
+    padding: 1.5rem;
+    background: linear-gradient(to right, rgba(249, 115, 22, 0.1), rgba(234, 179, 8, 0.05));
+    border: 1px solid rgba(249, 115, 22, 0.2);
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+  }
+  
+  .quoteBox p {
+    font-size: 1.125rem;
+    color: #e5e5e5;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  .proseContent {
+    color: #d4d4d4;
+    line-height: 1.8;
+    font-size: 1.125rem;
+  }
+  
+  .contentText {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contentHeading {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    scroll-margin-top: 6rem;
+  }
+  
+  .headingIconBox {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(249, 115, 22, 0.1);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    border-radius: 12px;
+    color: #f97316;
+    font-size: 1rem;
+  }
+  
+  .tagsSection {
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    background-color: #111;
+    border: 1px solid #262626;
+    border-radius: 16px;
+  }
+  
+  .tagItem {
+    padding: 8px 16px;
+    background-color: #1a1a1a;
+    color: #a3a3a3;
+    font-size: 0.875rem;
+    border-radius: 50px;
+    border: 1px solid #262626;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .tagItem:hover {
+    border-color: rgba(249, 115, 22, 0.5);
+    color: #f97316;
+  }
+  
+  .shareSection {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: #111;
+    border: 1px solid #262626;
+    border-radius: 16px;
+  }
+  
+  .iconBoxSmall {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(249, 115, 22, 0.1);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    border-radius: 12px;
+    color: #f97316;
+  }
+  
+  .socialBtn {
+    width: 44px;
+    height: 44px;
+    background-color: #1a1a1a;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a3a3a3;
+    transition: all 0.3s;
+  }
+  
+  .socialBtn:hover {
+    background-color: #f97316;
+    color: #fff;
+    border-color: #f97316;
+  }
+  
+  .authorBox {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(to bottom right, #161616, #111);
+    border: 1px solid #262626;
+    border-radius: 16px;
+  }
+  
+  .authorBoxImg {
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 4px solid rgba(249, 115, 22, 0.2);
+  }
+  
+  .authorLabel {
+    display: block;
+    font-size: 0.75rem;
+    color: #f97316;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .authorBoxName {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  
+  .authorBoxRole {
+    font-size: 0.875rem;
+    color: #737373;
+    margin-bottom: 12px;
+  }
+  
+  .authorBoxBio {
+    color: #a3a3a3;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .stickySidebar {
+    position: sticky;
+    top: 6rem; 
+  }
+  
+  .sidebarCard {
+    background-color: #111;
+    border: 1px solid #262626;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tocNav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .tocLink {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    color: #a3a3a3;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+  }
+  
+  .tocLink:hover {
+    background-color: rgba(249, 115, 22, 0.05);
+    color: #f97316;
+  }
+  
+  .tocNumber {
+    width: 24px;
+    height: 24px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #737373;
+    transition: all 0.3s;
+  }
+  
+  .tocLink:hover .tocNumber {
+    background-color: rgba(249, 115, 22, 0.1);
+    color: #f97316;
+  }
+  
+  .infoItem {
+    background-color: #0a0a0a;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .text-orange {
+    color: #f97316;
+  }
+  
+  .newsletterCard {
+    background: linear-gradient(to bottom right, rgba(249, 115, 22, 0.1), rgba(234, 179, 8, 0.05));
+    border: 1px solid rgba(249, 115, 22, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem;
+  }
+  
+  .newsletterIcon {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(249, 115, 22, 0.2);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+    color: #f97316;
+    font-size: 1.25rem;
+  }
+  
+  .newsletterBtn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #f97316;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .newsletterBtn:hover {
+    background-color: #ea580c;
+    color: #fff;
+  }
+  
+  .relatedSection {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px solid #262626;
+  }
+  
+  .iconBoxMedium {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(249, 115, 22, 0.1);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f97316;
+    font-size: 1.25rem;
+  }
+  
+  .viewAllLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f97316;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .viewAllLink:hover {
+    color: #ea580c;
+  }
+  
+  .relatedCard {
+    display: block;
+    background-color: #111;
+    border: 1px solid #262626;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .relatedCard:hover {
+    border-color: rgba(249, 115, 22, 0.3);
+    transform: translateY(-5px);
+  }
+  
+  .relatedImageWrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .relatedImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .relatedCard:hover .relatedImage {
+    transform: scale(1.1);
+  }
+  
+  .relatedOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #111, transparent);
+  }
+  
+  .relatedBadge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px 12px;
+    background-color: #f97316;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 50px;
+  }
+  
+  .relatedContent {
+    padding: 1.25rem;
+  }
+  
+  .relatedTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    transition: color 0.3s;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .relatedCard:hover .relatedTitle {
+    color: #f97316;
+  }
+  
+  .relatedMeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #737373;
+  }
+  
+  .relatedAvatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+  }

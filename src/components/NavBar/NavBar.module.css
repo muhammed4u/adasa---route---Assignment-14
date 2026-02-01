@@ -1,0 +1,182 @@
+.navbarCustom {
+  z-index: 1050; 
+  background-color: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.brandContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin-right: 0; 
+}
+
+.logoWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.brandContainer:hover .logoWrapper {
+  transform: scale(1.05);
+}
+
+.brandLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brandTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #fff, #d4d4d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.brandSubtitle {
+  font-size: 0.75rem;
+  color: rgba(251, 146, 60, 0.8);
+  letter-spacing: 0.05em;
+}
+
+.desktopNavCentered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.desktopPillsWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #161616;
+  border: 1px solid #262626;
+  border-radius: 50px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.desktopLink {
+  padding: 8px 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 50px;
+  color: #a3a3a3;
+  text-decoration: none;
+  transition: all 0.3s;
+  white-space: nowrap; 
+}
+
+.desktopLink:hover {
+  color: #fff;
+}
+
+.desktopLinkActive {
+  background: linear-gradient(90deg, #f97316 0%, #ea580c 100%);
+  color: #fff !important;
+  box-shadow: 0 2px 10px rgba(249, 115, 22, 0.3);
+}
+
+.iconBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #737373;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.iconBtn:hover {
+  color: #f97316;
+  background-color: #161616;
+  border-color: #262626;
+}
+
+.ctaButtonDesktop {
+  background: linear-gradient(90deg, #f97316 0%, #ea580c 100%);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.ctaButtonDesktop:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+.mobileToggler {
+  padding: 8px 12px;
+  color: #a3a3a3;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.mobileToggler:hover {
+  color: #fff;
+  background-color: #161616;
+  border-color: #262626;
+}
+
+.mobileMenuBox {
+  background-color: #161616;
+  border: 1px solid #262626;
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.mobileLink {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #a3a3a3;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+
+.mobileLink:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.mobileLinkActive {
+  background-color: rgba(249, 115, 22, 0.1);
+  color: #f97316 !important;
+  border-color: rgba(249, 115, 22, 0.2);
+}
+
+.ctaButtonMobile {
+  display: block;
+  text-align: center;
+  background: linear-gradient(90deg, #f97316 0%, #ea580c 100%);
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}

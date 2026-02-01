@@ -1,0 +1,172 @@
+
+.sectionContainer {
+    background-color: #0a0a0a;
+    padding: 80px 0;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .glowEffect {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, rgba(0, 0, 0, 0) 60%);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .subscribeCard {
+    background-color: #111;
+    border: 1px solid #262626;
+    border-radius: 24px;
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    background-image: radial-gradient(circle at top center, rgba(249, 115, 22, 0.03), transparent 70%);
+    z-index: 11;
+  }
+  
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+    background-color: #f97316;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    font-size: 1.5rem;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.2);
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    color: #a3a3a3;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .formWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+  }
+  
+  .emailInput {
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    padding: 14px 20px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1rem;
+    flex-grow: 1;
+    transition: all 0.3s;
+    outline: none;
+  }
+  
+  .emailInput:focus {
+    border-color: #f97316;
+  }
+  
+  .emailInput::placeholder {
+    color: #555;
+  }
+  
+  .subscribeBtn {
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+  }
+  
+  .subscribeBtn:hover {
+    background-color: #ea580c;
+    transform: translateY(-2px);
+  }
+  
+  .footerInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .avatarsGroup {
+    display: flex;
+    align-items: center;
+    padding-left: 10px; 
+  }
+  
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #111;
+    margin-left: -10px; 
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .footerTexts {
+    color: #737373;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .dotSeparator {
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .subscribeCard {
+      padding: 40px 20px;
+    }
+    .title {
+      font-size: 1.8rem;
+    }
+    .formWrapper {
+      flex-direction: column;
+    }
+    .subscribeBtn {
+      width: 100%;
+    }
+    .footerInfo {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }

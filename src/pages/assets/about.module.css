@@ -1,0 +1,429 @@
+.pageWrapper {
+  color: #a3a3a3;
+}
+
+.text-orange {
+  color: #f97316 !important;
+}
+
+.heroSection {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+  background-color: #0a0a0a;
+}
+
+.gridBackground {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(38, 38, 38, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(38, 38, 38, 0.5) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.glowEffect {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.glowTopLeft {
+  top: 5rem;
+  left: 5rem;
+  width: 18rem;
+  height: 18rem;
+  background-color: rgba(249, 115, 22, 0.2);
+  filter: blur(100px);
+}
+
+.glowBottomRight {
+  bottom: 5rem;
+  right: 5rem;
+  width: 24rem;
+  height: 24rem;
+  background-color: rgba(234, 179, 8, 0.1);
+  filter: blur(120px);
+}
+
+.badge {
+  background-color: #24160b;
+  border: 1px solid #f97316;
+  padding: 8px 16px;
+  border-radius: 50px;
+  color: #a3a3a3;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+  backdrop-filter: blur(5px);
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  background-color: #f97316;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.badgeDotMain {
+  width: 10px;
+  height: 10px;
+  background-color: #f97316;
+  border-radius: 50%;
+  margin-left: 8px;
+  box-shadow: 0 0 15px #f97316;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sectionLabel {
+  color: #a3a3a3;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+}
+
+.gradientText {
+  background: linear-gradient(to right, #f97316, #eab308);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroDesc {
+  font-size: 1.25rem;
+  color: #a3a3a3;
+  max-width: 48rem;
+  margin: 0 auto 3rem auto;
+  line-height: 1.7;
+}
+
+.glassCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1rem 0.3rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.statNumber {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #f97316, #eab308);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.25rem;
+}
+
+.statLabel {
+  color: #737373;
+  font-size: 0.875rem;
+}
+
+.valuesSection {
+  padding: 80px 0;
+  background-color: #111;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+}
+
+.sectionHeading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headingDecorLeft {
+  width: 6px;
+  height: 32px;
+  background: linear-gradient(to bottom, #f97316, #eab308);
+  border-radius: 50px;
+}
+
+.headingDecorRight {
+  width: 6px;
+  height: 32px;
+  background: linear-gradient(to bottom, #eab308, #f97316);
+  border-radius: 50px;
+}
+
+.sectionSubText {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.valueCard {
+  background-color: #161616;
+  border: 1px solid #262626;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.valueCard:hover {
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.cardGlow,
+.cardGlowOrange {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cardGlow {
+  background: linear-gradient(to bottom right, #f97316, #eab308);
+}
+.cardGlowOrange {
+  background: linear-gradient(to bottom right, #ea580c, #fb923c);
+}
+
+.valueCard:hover .cardGlow,
+.valueCard:hover .cardGlowOrange {
+  opacity: 0.05;
+}
+
+.valueTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.valueCard:hover .valueTitle {
+  color: #f97316;
+}
+
+.valueText {
+  color: #a3a3a3;
+  font-size: 0.9rem;
+}
+
+.teamSection {
+  padding: 80px 0;
+  background-color: #0a0a0a;
+}
+
+.sectionLabelSimple {
+  color: #a3a3a3;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.teamHeading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.teamCard {
+  background-color: #161616;
+  border: 1px solid #262626;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.teamCard:hover {
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.authorAvatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #262626;
+  transition: all 0.3s;
+}
+
+.teamCard:hover .authorAvatar {
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.verifiedBadge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 24px;
+  height: 24px;
+  background-color: #f97316;
+  border: 2px solid #161616;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authorName {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.authorRole {
+  color: #f97316;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.socialBtnOrange,
+.socialBtnDark,
+.socialBtnBlue {
+  width: 36px;
+  height: 36px;
+  background-color: #262626;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #737373;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.socialBtnOrange:hover {
+  background-color: #f97316;
+  color: #fff;
+}
+.socialBtnDark:hover {
+  background-color: #404040;
+  color: #fff;
+}
+.socialBtnBlue:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.ctaSection {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #ea580c, #f97316, #eab308);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ctaGlow1,
+.ctaGlow2 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.ctaGlow1 {
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 16rem;
+  height: 16rem;
+  filter: blur(100px);
+}
+.ctaGlow2 {
+  bottom: 2.5rem;
+  left: 2.5rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+.ctaTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.ctaText {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 40rem;
+  margin: 0 auto 2rem auto;
+}
+
+.ctaBtnPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  background-color: #0a0a0a;
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.ctaBtnPrimary:hover {
+  background-color: #171717;
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.ctaBtnOutline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.ctaBtnOutline:hover {
+  background-color: #fff;
+  color: #0a0a0a;
+}
